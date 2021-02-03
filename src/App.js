@@ -1,20 +1,24 @@
 
 
 import './App.css';
-import './style.css'
+
 import Home from './Home'
-import useSticky from './hooks/useSticky.js'
-import Navbar from './header/Navbar'
+import NavigationBar from './bootstraps/header'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react"
+import { PDFViewer } from 'react-view-pdf';
 function App() {
   const title = "Welcome to the new blo";
   const likes = 50;
   const person = { name: "yoshi", age: 30}
   const link = "http://www.google.com";
-  const { isSticky, element} = useSticky()
   return (
     <div className="App">
-      <Navbar sticky = {isSticky} />
-      <Home /> 
+      <div className="stickyTop">
+        <NavigationBar />
+      </div>
+      <PDFViewer url="Resume.pdf" />
+      
     </div>
   );
 }
