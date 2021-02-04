@@ -41,7 +41,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
+  "devDependencies": { 
     "antd": "^3.26.20",
     "core-js": "^3.8.3",
     "jquery": "^3.5.1",
