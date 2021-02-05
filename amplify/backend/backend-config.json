@@ -1,1 +1,16 @@
-{}
+{
+  "auth": {
+    "awsportfoliob9d263a4": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "Projects": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}
