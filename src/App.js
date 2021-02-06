@@ -56,37 +56,18 @@ class App extends React.Component {
   const likes = 50;
   const person = { name: "yoshi", age: 30}
   const link = "http://www.google.com";
+  const files = Storage.list('')
+  console.log(files)
   return (
     <div className="App">
       <div className="stickyTop">
         <NavigationBar />
         <Subclass property="string"/>
+        <img class="logo" src="logo192.png" alt="My_Logo"></img>
         <ExampleRouter />
       </div>
-      <div>
-        <input
-          type="file" accept='image/png'
-          onChange={(e) => this.onChange(e)}
-        />
-        <button onClick={this.listFiles}>
-          List Files
-        </button>
-        <div>
-        {
-          this.state.files.map((file, i) => (
-           <p onClick={() => this.selectFile(file)}>{file.key}</p>
-          ))
-        }
-        </div>
-        {
-          this.state.file && (
-            <img
-              src={this.state.file}
-              style={{width: 300}}
-            />
-          )
-        }
-      </div>
+      hi
+      
       <PDFViewer url="Resume.pdf" />
       
     </div>
