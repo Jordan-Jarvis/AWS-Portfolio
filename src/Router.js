@@ -5,24 +5,25 @@ import {
     Route,
     Link
   } from "react-router-dom";
-
-  export default function ExampleRouter() {
+  import { PDFViewer } from 'react-view-pdf';
+  import ProjectList from './projects/projects.js'
+  export default function URLRouter() {
     return (
       <Router>
         <div>
-          <nav>
+          {/* <nav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/resume">About</Link>
               </li>
               <li>
-                <Link to="/users">Users</Link>
+                <Link to="/projects">Projects</Link>
               </li>
             </ul>
-          </nav>
+          </nav> */}
   
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
@@ -30,11 +31,12 @@ import {
             <Route path="/about">
               About Page
             </Route>
-            <Route path="/users">
+            <Route path="/resume">
+            <PDFViewer url="Resume.png" />
               Users Page
             </Route>
-            <Route path="/">
-              Home Page
+            <Route path="/projects">
+              <ProjectList />
             </Route>
           </Switch>
         </div>

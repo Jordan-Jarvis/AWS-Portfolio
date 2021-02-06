@@ -6,8 +6,8 @@ import Home from './Home'
 import NavigationBar from './bootstraps/header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react"
-import { PDFViewer } from 'react-view-pdf';
-import ExampleRouter from './Router';
+
+import URLRouter from './Router';
 import { Storage } from 'aws-amplify'
 import { Document } from 'react-pdf'
 // function App() {
@@ -64,12 +64,14 @@ class App extends React.Component {
       <div className="stickyTop">
         <NavigationBar />
         <Subclass property="string"/>
-        <img class="logo" src="logo192.png" alt="My_Logo"></img>
-        <ExampleRouter />
+        <Subclass property="string"/>
+        <nav className="boundaries">
+        <URLRouter />
+        </nav>
       </div>
-      hi
       
-      <PDFViewer url="Resume.png" />
+      
+      
     </div>
   );
   }
@@ -81,7 +83,7 @@ class Subclass extends React.Component {
     console.log(this.props.property);
     return (
     <div>
-      Hi
+      
     </div>
     )
   }
