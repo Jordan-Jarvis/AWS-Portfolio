@@ -69,7 +69,7 @@ class App extends React.Component {
       </div>
       hi
       
-      <PDFViewer url="Resume.pdf" />
+      <PDFViewer url="Resume.png" />
     </div>
   );
   }
