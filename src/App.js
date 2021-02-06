@@ -9,6 +9,7 @@ import React from "react"
 import { PDFViewer } from 'react-view-pdf';
 import ExampleRouter from './Router';
 import { Storage } from 'aws-amplify'
+import { Document } from 'react-pdf'
 // function App() {
 //   const title = "Welcome to the new blo";
 //   const likes = 50;
@@ -69,7 +70,6 @@ class App extends React.Component {
       hi
       
       <PDFViewer url="Resume.pdf" />
-      
     </div>
   );
   }
