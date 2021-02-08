@@ -4,29 +4,40 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import Nav from 'react-bootstrap/Nav'
 import './header.css' 
 import './Navbar.css'
-const Logo = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/07712d52323517.5608d99892165.png";
+import './SocialMedia.css'
+const Logo = "/lighttransparent.png";
 
 const NavigationBar = () => (
+  
   <nav className="navbar">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home"><img src={Logo} alt="Jarvis logo" className="navbar--logo" /></Navbar.Brand>
+  <Navbar.Brand href="/"><img src={Logo} alt="Jarvis logo" className="navbar--logo" /></Navbar.Brand>
+  <div style={{color:"red", display:'flex'}}>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-github"></a>
+  <a href="#" class="fa fa-envelope"></a>
+  </div>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href="/resume">Resume</Nav.Link>
       <Nav.Link href="/projects">Projects</Nav.Link>
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+      <Nav.Link href="/aboutme">About Me</Nav.Link>
+      <NavDropdown title="Individual Projects" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="/about">Placeholder</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Placeholder</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Site under construction</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
+      <Nav.Link href="/contactme">Contact Me</Nav.Link>
+      <Nav.Link eventKey={2} href="/me">
+        Non Technical Hobbies And Interests
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>

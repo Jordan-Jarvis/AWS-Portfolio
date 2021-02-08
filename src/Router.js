@@ -1,4 +1,5 @@
 import React from "react";
+import HomePage from "./home/home"
 import ProjectPDFCard from "./projects/projectCards/cardPDF"
 import {
     BrowserRouter as Router,
@@ -32,6 +33,7 @@ import {
             <Route path="/about">
               About Page
             </Route>
+
             <Route path="/resume">
             <ProjectPDFCard 
                 title = 'AI and Computer Vision Boggle and Sudoku Solver' 
@@ -45,6 +47,15 @@ import {
             </Route>
             <Route path="/projects">
               <ProjectList />
+            </Route>
+            <Route path="/">
+              <HomePage
+              title = 'AI and Computer Vision Boggle and Sudoku Solver' 
+              PDFURL =   'https://github.com/Jordan-Jarvis/AWS-Portfolio/raw/master/public/Resume.pdf'
+
+              buttonText = "Link to source" 
+              newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'
+              />
             </Route>
           </Switch>
         </div>

@@ -1,0 +1,31 @@
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+
+}
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.9;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #0077B5;
+    color: white;
+  }
+  .fa-github {
+    background: black;
+    color: white;
+  }
+  .fa-envelope {
+    background: rgb(61, 199, 245);
+    color: white;
+  }
