@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectPDFCard from "./projects/projectCards/cardPDF"
 import {
     BrowserRouter as Router,
     Switch,
@@ -32,7 +33,14 @@ import {
               About Page
             </Route>
             <Route path="/resume">
-            <PDFViewer url="Resume.png" />
+            <ProjectPDFCard 
+                title = 'AI and Computer Vision Boggle and Sudoku Solver' 
+                PDFURL =   'https://github.com/Jordan-Jarvis/AWS-Portfolio/raw/master/public/Resume.pdf'
+
+                buttonText = "Link to source" 
+                newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'
+                />
+
               Users Page
             </Route>
             <Route path="/projects">

@@ -2,6 +2,8 @@ import React from "react"
 import ProjectCard from './projectCards/cardTemplate.js'
 import './project.css' 
 import ProjectIframeCard from "./projectCards/cardIframe.js"
+import ProjectEmbedCard from "./projectCards/cardEmbed.js"
+
 
 const Logo = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/07712d52323517.5608d99892165.png";
 
@@ -16,10 +18,11 @@ const ProjectList = () => (
                 newURL = "https://github.com/Jordan-Jarvis/AWS-Portfolio"
                 />
 
-        <ProjectCard 
+        <ProjectEmbedCard 
                 title = 'RPi Disklavier Network Player' 
                 text = "Will add a description soon. Right now the site is under construction." 
                 buttonText = "Link to source" 
+                embedCode = {<iframe className = "marg" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6719651416736198656?compact=1" allowfullscreen="" title="Embedded post" frameborder="0"></iframe>}
                 imgURL = 'https://raw.githubusercontent.com/Jordan-Jarvis/RPi-Diskalvier-network-player/master/static/screenshot.png' 
                 newURL = 'https://github.com/Jordan-Jarvis/RPi-Diskalvier-network-player'
                 />
