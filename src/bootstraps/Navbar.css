@@ -6,6 +6,8 @@
     position: absolute;
     z-index: 1;
     width: 100%;
+
+    position: sticky;
   }
   
   .navbar-sticky {

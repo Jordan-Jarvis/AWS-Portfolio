@@ -10,6 +10,7 @@ import React from "react"
 import URLRouter from './Router';
 import { Storage } from 'aws-amplify'
 import { Document } from 'react-pdf'
+import Parallax from './parallax/parallax';
 // function App() {
 //   const title = "Welcome to the new blo";
 //   const likes = 50;
@@ -61,16 +62,24 @@ class App extends React.Component {
   console.log(files)
   return (
     <div className="App">
-      <div className="stickyTop">
-        <NavigationBar />
-        <Subclass property="string"/>
-        <Subclass property="string"/>
-        <nav className="boundaries">
+      <div class="parallax-wrapper">
+      <NavigationBar />
+      <div className="boundaries">
         <URLRouter />
-        </nav>
-      </div>
+        </div>
       
-      
+      <div className = "season--desc">
+
+      <div className="desc-wrapper">
+
+
+        <Subclass property="string"/>
+        <Subclass property="string"/>
+
+
+        </div>
+        </div>
+        </div>
       
     </div>
   );
