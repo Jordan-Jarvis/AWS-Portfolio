@@ -13,7 +13,7 @@ const ProjectList = () => (
 <div>
         <ProjectCard 
                 title = 'This Site' 
-                text = "My latest project is making this site. It is built in Node.js, uses React for the front-end, and is hosted on AWS. Click the button below to see the source." 
+                text = "My latest project is making this site. It is built in Node.js, uses React for the front-end, and is hosted on AWS. Click the button below to see the source. Technologies used: AWS (hosting), Node.js, Express.js, Bootstrap, React, CSS, HTML, JSON, " 
                 buttonText = "Go to Source"
                 newURL = "https://github.com/Jordan-Jarvis/AWS-Portfolio"
                 />

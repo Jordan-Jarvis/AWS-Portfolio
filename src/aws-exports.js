@@ -9,7 +9,14 @@ const awsmobile = {
     "aws_user_pools_web_client_id": "128p3je1i225e79di2dq71d915",
     "oauth": {},
     "aws_user_files_s3_bucket": "projects215100-staging",
-    "aws_user_files_s3_bucket_region": "us-east-2"
+    "aws_user_files_s3_bucket_region": "us-east-2",
+    "aws_cloud_logic_custom": [
+        {
+            "name": "backendportfolio",
+            "endpoint": "https://dpwhae1681.execute-api.us-east-2.amazonaws.com/staging",
+            "region": "us-east-2"
+        }
+    ]
 };
 
 

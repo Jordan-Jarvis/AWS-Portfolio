@@ -11,7 +11,7 @@ class ProjectIframeCard extends React.Component {
       return (
         <div className = "card2">
           <div className="buffer">
-          <iframe className = "marg" src="https://aqueous-brushlands-07164.herokuapp.com/playMusic" frameBorder="0" allowFullScreen ></iframe>
+          <iframe className = "marg" src="https://aqueous-brushlands-07164.herokuapp.com/playMusic" frameBorder="0" allowFullScreen ><p>Your browser does not support iframes.</p></iframe>
           </div>
         <Card style={{ }}>
         <Card.Img variant="top" src= {this.props.imgURL} />

@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/express",
+            "lambdaFunction": "lambdabackend",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/express"
+        }
+    ],
+    "resourceName": "backendportfolio",
+    "apiName": "backendportfolio",
+    "functionArns": [
+        {
+            "lambdaFunction": "lambdabackend"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifydafcb20cf0534-staging-215100-authRole",
+        "unAuthRoleName": "amplify-amplifydafcb20cf0534-staging-215100-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "lambdabackend",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 
 
 import './App.css';
-
+import "./express.js"
 import Home from './Home'
 import NavigationBar from './bootstraps/header'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,6 +11,10 @@ import URLRouter from './Router';
 import { Storage } from 'aws-amplify'
 import { Document } from 'react-pdf'
 import Parallax from './parallax/parallax';
+
+
+
+
 // function App() {
 //   const title = "Welcome to the new blo";
 //   const likes = 50;
@@ -28,6 +32,11 @@ import Parallax from './parallax/parallax';
 // }
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { apiResponse: "" };
+    }
+  
 
   state = {
     files: [],
@@ -60,9 +69,15 @@ class App extends React.Component {
   const link = "http://www.google.com";
   const files = Storage.list('')
   console.log(files)
+  Storage.get('Resume.pdf', {expires: 60})
+.then(result => console.log(result))
+.catch(err => console.log(err));
   return (
+    
     <div className="App">
-      <div class="parallax-wrapper">
+      <p className="App-intro">;{this.state.apiResponse}</p>
+      <div className="parallax-wrapper">
+        
       <NavigationBar />
       <div className="boundaries">
         <URLRouter />

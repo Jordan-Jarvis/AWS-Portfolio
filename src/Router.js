@@ -1,6 +1,7 @@
 import React from "react";
 import HomePage from "./home/home"
 import ProjectPDFCard from "./projects/projectCards/cardPDF"
+import NotFound from "./errorCorrection/404Error.js"
 import {
     BrowserRouter as Router,
     Switch,
@@ -30,14 +31,14 @@ import {
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/about">
+            <Route exact path="/about">
               About Page
             </Route>
 
-            <Route path="/resume">
+            <Route exact path="/resume">
             <ProjectPDFCard 
                 title = 'AI and Computer Vision Boggle and Sudoku Solver' 
-                PDFURL =   'https://github.com/Jordan-Jarvis/AWS-Portfolio/raw/master/public/Resume.pdf'
+                PDFURL =   '/Resume.pdf'
 
                 buttonText = "Link to source" 
                 newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'
@@ -45,10 +46,13 @@ import {
 
               Users Page
             </Route>
-            <Route path="/projects">
+            <Route exact path="/Resume.pdf">
+              
+            </Route>
+            <Route exact path="/projects">
               <ProjectList />
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <HomePage
               title = 'AI and Computer Vision Boggle and Sudoku Solver' 
               PDFURL =   'https://github.com/Jordan-Jarvis/AWS-Portfolio/raw/master/public/Resume.pdf'
@@ -57,6 +61,7 @@ import {
               newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'
               />
             </Route>
+            <Route component={NotFound} />
           </Switch>
         </div>
       </Router>

@@ -13,7 +13,7 @@ class ProjectPDFCard extends React.Component {
       return (
         <div className = "card2">
           <div className="buffer">
-          <iframe className = "marg" src={"https://docs.google.com/gview?url=" + this.props.PDFURL + "&embedded=true"} frameborder="0"></iframe>
+          <iframe className = "marg" src={this.props.PDFURL + "&embedded=true"} frameBorder="0"></iframe>
           </div>
         <Card style={{ }}>
 

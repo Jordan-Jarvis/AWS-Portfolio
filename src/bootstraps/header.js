@@ -15,10 +15,10 @@ const NavigationBar = () => (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Navbar.Brand href="/"><img src={Logo} alt="Jarvis logo" className="navbar--logo" /></Navbar.Brand>
   <div style={{color:"red", display:'flex'}}>
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-linkedin"></a>
-  <a href="#" class="fa fa-github"></a>
-  <a href="#" class="fa fa-envelope"></a>
+  <a href="https://www.facebook.com/jordan.jarvis3" className="fa fa-facebook"></a>
+  <a href="https://www.linkedin.com/in/jordan-jarvis95" className="fa fa-linkedin"></a>
+  <a href="https://github.com/Jordan-Jarvis" className="fa fa-github"></a>
+  <a href="#" className="fa fa-envelope"></a>
   </div>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
