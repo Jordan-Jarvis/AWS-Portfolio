@@ -10,6 +10,10 @@ import {
   } from "react-router-dom";
   import { PDFViewer } from 'react-view-pdf';
   import ProjectList from './projects/projects.js'
+  var PDFURL = ""
+
+
+console.log(PDFURL)
   export default function URLRouter() {
     return (
       <Router>
@@ -37,8 +41,9 @@ import {
 
             <Route exact path="/resume">
             <ProjectPDFCard 
+            
                 title = 'AI and Computer Vision Boggle and Sudoku Solver' 
-                PDFURL =   '/Resume.pdf'
+                PDFURL = "http://uuu.com"
 
                 buttonText = "Link to source" 
                 newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'
@@ -46,16 +51,14 @@ import {
 
               Users Page
             </Route>
-            <Route exact path="/Resume.pdf">
-              
-            </Route>
+
+
             <Route exact path="/projects">
               <ProjectList />
             </Route>
             <Route exact path="/">
               <HomePage
               title = 'AI and Computer Vision Boggle and Sudoku Solver' 
-              PDFURL =   'https://github.com/Jordan-Jarvis/AWS-Portfolio/raw/master/public/Resume.pdf'
 
               buttonText = "Link to source" 
               newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'

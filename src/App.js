@@ -1,7 +1,7 @@
 
 
 import './App.css';
-import "./express.js"
+
 import Home from './Home'
 import NavigationBar from './bootstraps/header'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -69,13 +69,10 @@ class App extends React.Component {
   const link = "http://www.google.com";
   const files = Storage.list('')
   console.log(files)
-  Storage.get('Resume.pdf', {expires: 60})
-.then(result => console.log(result))
-.catch(err => console.log(err));
+
   return (
     
     <div className="App">
-      <p className="App-intro">;{this.state.apiResponse}</p>
       <div className="parallax-wrapper">
         
       <NavigationBar />
