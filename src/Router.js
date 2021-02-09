@@ -43,7 +43,7 @@ console.log(PDFURL)
             <ProjectPDFCard 
             
                 title = 'AI and Computer Vision Boggle and Sudoku Solver' 
-                PDFURL = "http://uuu.com"
+                PDFURL = "https://projects215100-staging.s3.us-east-2.amazonaws.com/public/Resume.pdf"
 
                 buttonText = "Link to source" 
                 newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'

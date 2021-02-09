@@ -5,17 +5,9 @@ import Button from 'react-bootstrap/Button'
 import React from "react"
 import './card.css'
 import { Storage } from 'aws-amplify'
-var PDFur = ""
-async function getURL(newURL){
-  let returnVal = await Storage.get('Resume.pdf')
-  console.log(returnVal)
-  PDFur = returnVal
-}
-getURL("")
+
 class ProjectPDFCard extends React.Component {
-    state = {
-      PDFURL: PDFur
-    }
+
 
     render() {
       
@@ -24,7 +16,7 @@ class ProjectPDFCard extends React.Component {
         <div className = "card2">
           <div className="buffer">
             
-          <iframe className = "marg" src={PDFur} frameBorder="0"></iframe>
+          <iframe className = "marg" src={this.props.PDFURL} frameBorder="0"></iframe>
           </div>
         <Card style={{ }}>
 
