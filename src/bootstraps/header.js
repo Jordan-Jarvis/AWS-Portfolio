@@ -14,18 +14,18 @@ const NavigationBar = () => (
 
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Navbar.Brand href="/"><img src={Logo} alt="Jarvis logo" className="navbar--logo" /></Navbar.Brand>
-  <div style={{color:"red", display:'flex'}}>
-  <a href="https://www.facebook.com/jordan.jarvis3" className="fa fa-facebook"></a>
-  <a href="https://www.linkedin.com/in/jordan-jarvis95" className="fa fa-linkedin"></a>
-  <a href="https://github.com/Jordan-Jarvis" className="fa fa-github"></a>
-  <a href="#" className="fa fa-envelope"></a>
-  </div>
+
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
+  <Nav.Link href="https://github.com/Jordan-Jarvis" className="fa fa-github"></Nav.Link>
+  <Nav.Link href="https://www.facebook.com/jordan.jarvis3" className="fa fa-facebook"></Nav.Link>
+  <Nav.Link href="https://www.linkedin.com/in/jordan-jarvis95" className="fa fa-linkedin"></Nav.Link>
+  <Nav.Link href="#" className="fa fa-envelope"></Nav.Link>
     <Nav className="mr-auto">
       <Nav.Link href="/resume">Resume</Nav.Link>
       <Nav.Link href="/projects">Projects</Nav.Link>
       <Nav.Link href="/aboutme">About Me</Nav.Link>
+      
       <NavDropdown title="Individual Projects" id="collasible-nav-dropdown">
         <NavDropdown.Item href="/about">Placeholder</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Placeholder</NavDropdown.Item>
