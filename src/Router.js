@@ -9,7 +9,6 @@ import {
     Route,
     Link
   } from "react-router-dom";
-  import { PDFViewer } from 'react-view-pdf';
   import ProjectList from './projects/projects.js'
   var PDFURL = ""
 
@@ -57,6 +56,24 @@ console.log(PDFURL)
 
             <Route exact path="/projects">
               <ProjectList />
+            </Route>
+            <Route exact path="/thissite">
+              <Construction />
+            </Route>
+            <Route exact path="/rpimusic">
+              <Construction />
+            </Route>
+            <Route exact path="/boggle">
+              <Construction />
+            </Route>
+            <Route exact path="/hmusic">
+              <Construction />
+            </Route>
+            <Route exact path="/contactme">
+              <Construction />
+            </Route>
+            <Route exact path="/me">
+              <Construction />
             </Route>
             <Route exact path="/">
               <HomePage

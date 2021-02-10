@@ -27,11 +27,13 @@ const NavigationBar = () => (
       <Nav.Link href="/aboutme">About Me</Nav.Link>
       
       <NavDropdown title="Individual Projects" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="/about">Placeholder</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Placeholder</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Site under construction</NavDropdown.Item>
+        <NavDropdown.Item href="/thissite">Heroku HTML5 MP3 Player</NavDropdown.Item>
+        <NavDropdown.Item href="/rpimusic">RPi Disklavier Network Player</NavDropdown.Item>
+        <NavDropdown.Item href="/boggle">AI Boggle and Sudoku Solver</NavDropdown.Item>
+
+        <NavDropdown.Item href="/hmusic">Heroku HTML5 MP3 Player</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        <NavDropdown.Item href="/">More to come!</NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Nav>

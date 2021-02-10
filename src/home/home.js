@@ -26,7 +26,7 @@ class HomePage extends React.Component {
   </p>
   <HomeCarousel/>
   <p>
-    <Button variant="primary">More about me</Button>    <Button variant="primary">See my projects</Button>
+    <Button variant="primary" onClick={()=>window.open("/me")}>More about me</Button>    <Button variant="primary" onClick={()=>window.open("/projects")}>See my projects</Button>
 
   </p>
 </Jumbotron>

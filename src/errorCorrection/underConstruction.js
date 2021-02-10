@@ -22,11 +22,11 @@ class Construction extends React.Component {
                             <h2>
                                 Under Construction</h2>
                             <div className="error-details">
-                                Sorry, the page you requested is under construction and will be publicly available soon. 
+                                Sorry, the page you requested is under construction and will be publicly available soon. This is a fairly new website (less than a week old). In the meantime check out some of my projects!
                             </div>
                             <div className="error-actions">
-                                <a href="/" className="btn btn-primary btn-lg"><span className="glyphicon glyphicon-home"></span>
-                                    Take Me Home </a>
+                                <a href="/projects" className="btn btn-primary btn-lg"><span className="glyphicon glyphicon-home"></span>
+                                    See My Projects </a>
                             </div>
            
             </div>
