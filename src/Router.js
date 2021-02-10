@@ -44,10 +44,10 @@ console.log(PDFURL)
             <ProjectPDFCard 
             
                 title = 'Click "download" below to download a copy' 
-                PDFURL = "https://projects215100-staging.s3.us-east-2.amazonaws.com/public/Resume.pdf"
+                PDFURL = "https://projects215100-staging.s3.us-east-2.amazonaws.com/public/Resume-b.pdf"
 
                 buttonText = "Download" 
-                newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'
+                newURL = "https://projects215100-staging.s3.us-east-2.amazonaws.com/public/Resume-b.pdf"
                 />
 
               Users Page
@@ -77,10 +77,7 @@ console.log(PDFURL)
             </Route>
             <Route exact path="/">
               <HomePage
-              title = 'AI and Computer Vision Boggle and Sudoku Solver' 
 
-              buttonText = "Link to source" 
-              newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'
               />
             </Route>
             <Route component={NotFound} />
