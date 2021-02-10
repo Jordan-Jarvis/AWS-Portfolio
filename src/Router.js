@@ -2,6 +2,7 @@ import React from "react";
 import HomePage from "./home/home"
 import ProjectPDFCard from "./projects/projectCards/cardPDF"
 import NotFound from "./errorCorrection/404Error.js"
+import Construction from "./errorCorrection/underConstruction.js"
 import {
     BrowserRouter as Router,
     Switch,
@@ -35,23 +36,24 @@ console.log(PDFURL)
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <Switch>
-            <Route exact path="/about">
+            <Route exact path="/aboutme">
               About Page
+              <Construction/>
             </Route>
 
             <Route exact path="/resume">
             <ProjectPDFCard 
             
-                title = 'AI and Computer Vision Boggle and Sudoku Solver' 
+                title = 'Click "download" below to download a copy' 
                 PDFURL = "https://projects215100-staging.s3.us-east-2.amazonaws.com/public/Resume.pdf"
 
-                buttonText = "Link to source" 
+                buttonText = "Download" 
                 newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'
                 />
 
               Users Page
             </Route>
-
+              
 
             <Route exact path="/projects">
               <ProjectList />

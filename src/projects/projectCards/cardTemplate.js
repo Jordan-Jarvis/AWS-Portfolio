@@ -17,6 +17,7 @@ class ProjectCard extends React.Component {
             <Card.Text>
             {this.props.text}
             </Card.Text>
+            {this.props.CHTML}
             <Button variant="primary" onClick={()=>window.open(this.props.newURL)}>{this.props.buttonText}</Button>
             
         </Card.Body>

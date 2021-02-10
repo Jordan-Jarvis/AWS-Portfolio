@@ -6,11 +6,10 @@ import Home from './Home'
 import NavigationBar from './bootstraps/header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react"
-
+import Footer from "./bootstraps/Footer"
 import URLRouter from './Router';
 import { Storage } from 'aws-amplify'
-import { Document } from 'react-pdf'
-import Parallax from './parallax/parallax';
+
 
 
 
@@ -39,10 +38,6 @@ class App extends React.Component {
 
     }
     
-
-
-  
-
   state = {
     files: [],
     file: ""
@@ -69,19 +64,15 @@ class App extends React.Component {
   }
 
   render() {
-  const title = "Welcome to the new blo";
-  const likes = 50;
-  const person = { name: "yoshi", age: 30}
-  const link = "http://www.google.com";
-  const files = Storage.list('')
-  console.log(files)
+
 
   return (
     
     <div className="App">
+
       <div className="parallax-wrapper">
-        
       <NavigationBar />
+
       <div className="boundaries">
         <URLRouter />
         </div>
@@ -97,6 +88,7 @@ class App extends React.Component {
 
         </div>
         </div>
+        <Footer/>
         </div>
       
     </div>

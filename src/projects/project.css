@@ -12,3 +12,18 @@
 .card{
     justify-content:center;
 }
+.technologies{
+    position: left;
+    text-align:left;
+    margin-right:auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+         column-count: 4;
+ -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+         column-width: 200px;
+}
+
+  

@@ -11,7 +11,9 @@ class ProjectEmbedCard extends React.Component {
       return (
         <div className = "card2">
           <div className="buffer">
+            <div className="minHeight">
           {this.props.embedCode}
+          </div>
           </div>
         <Card style={{ }}>
         <Card.Img variant="top" src= {this.props.imgURL} />
@@ -20,6 +22,9 @@ class ProjectEmbedCard extends React.Component {
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>
             {this.props.text}
+            </Card.Text>
+            <Card.Text className="technologies">
+            {this.props.CHTML}
             </Card.Text>
             <Button variant="primary" onClick={()=>window.open(this.props.newURL)}>{this.props.buttonText}</Button>
             

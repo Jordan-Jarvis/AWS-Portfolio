@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card'
 import React from "react"
 import '../projects/projectCards/card.css'
-class PageNotFound extends React.Component {
+class Construction extends React.Component {
   openURL(newURL){
   
   }
@@ -18,11 +18,11 @@ class PageNotFound extends React.Component {
 
                         <div className="error-template">
                             <h1>
-                                Oops!</h1>
+                                Well, this is no fun.!</h1>
                             <h2>
-                                404 Not Found</h2>
+                                Under Construction</h2>
                             <div className="error-details">
-                                Sorry, an error has occured, Requested page not found!
+                                Sorry, the page you requested is under construction and will be publicly available soon. 
                             </div>
                             <div className="error-actions">
                                 <a href="/" className="btn btn-primary btn-lg"><span className="glyphicon glyphicon-home"></span>
@@ -41,4 +41,4 @@ class PageNotFound extends React.Component {
     }
   }
 
-  export default PageNotFound
+  export default Construction

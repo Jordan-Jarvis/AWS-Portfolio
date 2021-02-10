@@ -11,7 +11,9 @@ class ProjectIframeCard extends React.Component {
       return (
         <div className = "card2">
           <div className="buffer">
-          <iframe className = "marg" src="https://aqueous-brushlands-07164.herokuapp.com/playMusic" frameBorder="0" allowFullScreen ><p>Your browser does not support iframes.</p></iframe>
+            <div className="bbox">
+          <iframe className = "marg" src={this.props.frameURL} frameBorder="0" allowFullScreen ><p>Your browser does not support iframes.</p></iframe>
+          </div>
           </div>
         <Card style={{ }}>
         <Card.Img variant="top" src= {this.props.imgURL} />
@@ -21,6 +23,10 @@ class ProjectIframeCard extends React.Component {
             <Card.Text>
             {this.props.text}
             </Card.Text>
+            <Card.Text className="technologies">
+            {this.props.CHTML}
+            </Card.Text>
+            
             <Button variant="primary" onClick={()=>window.open(this.props.newURL)}>{this.props.buttonText}</Button>
             
         </Card.Body>
