@@ -17,16 +17,15 @@ class HomePage extends React.Component {
             
         </Card.Text>
         <Jumbotron>
-  <h1>  Welcome to my website! My name is Jordan Jarvis. </h1>
+  <h1>  Welcome to my portfolio website! My name is Jordan Jarvis. </h1>
   <p>
-  I recently graduated from BYU-Idaho with a degree in Computer Scince.
-        If you give me a broken laptop I will do my best to turn into a cloud server. I love to eat seafood and if you let me I will spend all day on a computer or in nature. (it is kinda hard to combine the two) I love exercise and swimming. I love to find new things and learn new things, if you provide me an opportunity I would love to learn from you.
-
+  This site was written using a variety of technologies including but not limited to React, AWS, and Express. To see more about it check my projects page! 
+  <br></br>
 
   </p>
   <HomeCarousel/>
   <p>
-    <Button variant="primary" onClick={()=>window.open("/me")}>More about me</Button>    <Button variant="primary" onClick={()=>window.open("/projects")}>See my projects</Button>
+    <Button variant="primary" onClick={()=>window.open("/aboutme")}>More about me</Button>    <Button variant="primary" onClick={()=>window.open("/projects")}>See my projects</Button>
 
   </p>
 </Jumbotron>

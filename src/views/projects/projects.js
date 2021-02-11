@@ -3,7 +3,7 @@ import ProjectCard from './projectCards/cardTemplate.js'
 import './project.css' 
 import ProjectIframeCard from "./projectCards/cardIframe.js"
 import ProjectEmbedCard from "./projectCards/cardEmbed.js"
-
+import LazyLoad from 'react-lazy-load';
 
 const Logo = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/07712d52323517.5608d99892165.png";
 
@@ -11,6 +11,7 @@ const ProjectList = () => (
 
 
 <div>
+
 <ProjectCard 
                 title = 'Take a look at some of my projects' 
                 text = "Below are a collection of some of the projects I have done over the years. I am still building the site and have many more projects which will be added soon." 
@@ -61,6 +62,7 @@ const ProjectList = () => (
                 frameURL = "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6719651416736198656?compact=1"
                 newURL = 'https://github.com/Jordan-Jarvis/RPi-Diskalvier-network-player'
                 />
+                <LazyLoad offsetVertical={1000}>
         <ProjectIframeCard 
                 title = 'AI and Computer Vision Boggle and Sudoku Solver' 
                 text = "This program uses a combination of tensorflow libraries, opencv2, and numpy matrix manipulation to solve sudoku puzzles and boggle boards real time from a video feed." 
@@ -68,6 +70,8 @@ const ProjectList = () => (
                 buttonText = "Link to source" 
                 newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'
                 />
+                </LazyLoad>
+                <LazyLoad offsetVertical={1000}>
         <ProjectEmbedCard 
                 title = 'Heroku HTML5 MP3 Player' 
                 frameURL = "https://aqueous-brushlands-07164.herokuapp.com/playMusic"
@@ -90,6 +94,7 @@ const ProjectList = () => (
                 buttonText = "Link to source" 
                 newURL = 'https://github.com/Jordan-Jarvis/React-MP3-Player'
                 />
+                </LazyLoad>
                         
 
 </div>

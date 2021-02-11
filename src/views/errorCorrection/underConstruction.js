@@ -1,6 +1,8 @@
 import Card from 'react-bootstrap/Card'
 import React from "react"
 import '../projects/projectCards/card.css'
+import {pageTransition,pageStyle,pageVariants} from "../../parallax/transitions"
+import { AnimatePresence, motion } from "framer-motion";
 class Construction extends React.Component {
   openURL(newURL){
   
@@ -8,8 +10,15 @@ class Construction extends React.Component {
     render() {
       console.log(this.props.property);
       return (
+        <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
         <div className = "card2">
-
         <Card style={{ }}>
         <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
@@ -37,6 +46,7 @@ class Construction extends React.Component {
         </Card.Body>
         </Card>
         </div>
+        </motion.div>
       )
     }
   }

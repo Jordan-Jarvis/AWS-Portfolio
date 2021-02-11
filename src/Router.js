@@ -1,21 +1,25 @@
 import React from "react";
-import HomePage from "./home/home"
-import ProjectPDFCard from "./projects/projectCards/cardPDF"
-import NotFound from "./errorCorrection/404Error.js"
-import Construction from "./errorCorrection/underConstruction.js"
+import HomePage from "./views/home/home"
+import ProjectPDFCard from "./views/projects/projectCards/cardPDF"
+import NotFound from "./views/errorCorrection/404Error.js"
+import Construction from "./views/errorCorrection/underConstruction.js"
+import AboutMe from "./views/aboutme/aboutme"
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     Link
   } from "react-router-dom";
-  import ProjectList from './projects/projects.js'
+  import {AnimatePresence} from 'framer-motion'
+  import { BrowserRouter as Router} from 'react-router-dom';
+  import ProjectList from './views/projects/projects.js'
   var PDFURL = ""
 
 
 console.log(PDFURL)
   export default function URLRouter() {
     return (
+      
+
       <Router>
         <div>
           {/* <nav>
@@ -34,10 +38,11 @@ console.log(PDFURL)
   
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
+          <AnimatePresence>
           <Switch>
             <Route exact path="/aboutme">
               About Page
-              <Construction/>
+              <AboutMe/>
             </Route>
 
             <Route exact path="/resume">
@@ -82,7 +87,10 @@ console.log(PDFURL)
             </Route>
             <Route component={NotFound} />
           </Switch>
+      </AnimatePresence>
         </div>
       </Router>
     );
   }
+
+
