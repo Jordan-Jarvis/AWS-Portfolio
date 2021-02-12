@@ -6,6 +6,9 @@ import Construction from "./views/errorCorrection/underConstruction.js"
 import AboutMe from "./views/aboutme/aboutme"
 import ContactMe from "./views/contactme/contactme"
 import BoggleSolve from "./views/projects/bogglesolve/bogglesolve"
+import RPIPlay from "./views/projects/rpiplay/rpiplay"
+import HerokuExpress from "./views/projects/herokuexpress/herokuExpress"
+import ThisSite from "./views/projects/thissite/thissite"
 import {
     Switch,
     Route,
@@ -59,22 +62,20 @@ console.log(PDFURL)
 
               
             </Route>
-              
-
             <Route exact path="/projects">
               <ProjectList />
             </Route>
             <Route exact path="/thissite">
-              <Construction />
+              <ThisSite />
             </Route>
             <Route exact path="/rpimusic">
-              <Construction />
+              <RPIPlay />
             </Route>
             <Route exact path="/boggle">
               <BoggleSolve/>
             </Route>
             <Route exact path="/hmusic">
-              <Construction />
+              <HerokuExpress/>
             </Route>
             <Route exact path="/contactme">
               <ContactMe />

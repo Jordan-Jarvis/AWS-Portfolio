@@ -8,7 +8,7 @@ class HerokuExpress extends React.Component {
       console.log(this.props.property);
       return (
 <ProjectEmbedCard 
-                title = 'Heroku HTML5 MP3 Player' 
+                title = 'Heroku Express MP3 Player' 
                 frameURL = "https://aqueous-brushlands-07164.herokuapp.com/playMusic"
                 text = "Much of the UI was pre-built. I mostly made the back-end, which has a database which stores song information, album information, image URLs and more. It uses Express on Heroku and is able to play music from the server. Another project goes much more in depth on databases and storing data using SQL."
                 CHTML = { <div className="technologies"> <ul >
