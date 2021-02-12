@@ -8,18 +8,26 @@ class ProjectCard extends React.Component {
   }
     render() {
       console.log(this.props.property);
+      let button;
+      if (this.props.newTab == "1") {
+        button = <Button variant="primary" onClick={()=>window.open(this.props.newURL)}>{this.props.buttonText}</Button>;
+        
+      } else {
+        button = <Button variant="primary" onClick={()=>window.location.href = this.props.newURL}>{this.props.buttonText}</Button>;
+      }
       return (
         <div className = "card2">
         <Card style={{ }}>
-        <Card.Img variant="top" src= {this.props.imgURL} />
         <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>
             {this.props.text}
             </Card.Text>
+
+            <Card.Img variant="top" src= {this.props.imgURL} />
+            <Card.Title>{this.props.title2}</Card.Title>
             {this.props.CHTML}
-            <Button variant="primary" onClick={()=>window.open(this.props.newURL)}>{this.props.buttonText}</Button>
-            
+{button}            
         </Card.Body>
         </Card>
         </div>

@@ -39,7 +39,7 @@ class ContactMe extends React.Component {
             <br></br><br></br>
             This is when I joined <a href="https://www.firstinspires.org/robotics/frc">First Robotics</a>. The best way to describe First Robotics is the following quote from their site, <i>"Under strict rules and limited time and resources, teams of high school students are challenged to build industrial-size robots to play a difficult field game in alliance with other teams, while also fundraising to meet their goals, designing a team “brand,” and advancing respect and appreciation for STEM within the local community."</i>
             <br></br><br/>
-            Since then I have continued to learn build and create new things. When I was 17, my friend and I decided we would build a hovercraft. After a few tries, and failures, we ended up with a functional hovercraft made from duct-tape, plywood, plastic bags, a few screws, and 2 leaf blowers. Video of the final product <a href='https://youtu.be/KahVRZUKS3c'>here</a>. Just don't judge the editing too much. We were using windows movie maker and had no idea what we were doing.
+            Since then I have continued to learn, build, and create new things. When I was 17, my friend and I decided we would build a hovercraft. After a few tries, and failures, we ended up with a functional hovercraft made from duct-tape, plywood, plastic bags, a few screws, and 2 leaf blowers. Video of the final product <a href='https://youtu.be/KahVRZUKS3c'>here</a>. Just don't judge the editing too much. We were using windows movie maker and had no idea what we were doing.
             <br/><br/>
             After high school graduation I decided to serve a mission for <a href="https://www.churchofjesuschrist.org/?lang=eng">The Church of Jesus Christ of Latter Day Saints</a>. A mission is a voluntary humanitarian effort to help those in need. It typically lasts for 2 years and is paid for by the one performing the mission. The destination is chosen by church leaders, in my case that was San Diego, California. A mission involves many responsibilities and restrictions. These include: a strict schedule starting at 6:30am and ending at 10:30pm, learning deeply the materials needed to teach effectively, leadership of others, talking to strangers, 2 hours of study each day, assingment of another missionary who you work with for a few months at a time, and leadership responsibilities.
             <br></br><br></br>
@@ -51,7 +51,7 @@ class ContactMe extends React.Component {
   
   <p>
       <br></br>
-    <Button variant="primary" onClick={()=>window.open("/me")}>Contact Me</Button>    <Button variant="primary" onClick={()=>window.open("/projects")}>See my projects</Button>
+    <Button variant="primary" onClick={()=>window.location.href="/contactme"}>Contact Me</Button>    <Button variant="primary" onClick={()=>window.location.href="/projects"}>See my projects</Button>
 
   </p>
 </Jumbotron>

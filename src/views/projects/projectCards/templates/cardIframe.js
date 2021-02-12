@@ -7,14 +7,16 @@ class ProjectIframeCard extends React.Component {
   
   }
     render() {
-      console.log(this.props.property);
+      let button;
+      if (this.props.newTab == "1") {
+        button = <Button variant="primary" onClick={()=>window.open(this.props.newURL)}>{this.props.buttonText}</Button>;
+        
+      } else {
+        button = <Button variant="primary" onClick={()=>window.location.href = this.props.newURL}>{this.props.buttonText}</Button>;
+      }
       return (
         <div className = "card2">
-          <div className="buffer">
-            <div className="bbox">
-          <iframe className = "marg" src={this.props.frameURL} frameBorder="0" allowFullScreen ><p>Your browser does not support iframes.</p></iframe>
-          </div>
-          </div>
+          
         <Card style={{ }}>
         <Card.Img variant="top" src= {this.props.imgURL} />
 
@@ -22,13 +24,19 @@ class ProjectIframeCard extends React.Component {
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>
             {this.props.text}
+            <div className="buffer">
+            <div className="bbox">
+          <iframe className = "marg" src={this.props.frameURL} frameBorder="0" allowFullScreen ><p>Your browser does not support iframes.</p></iframe>
+          </div>
+          </div>
             </Card.Text>
+            <Card.Title>{this.props.title2}</Card.Title>
+
             <Card.Text className="technologies">
             {this.props.CHTML}
             </Card.Text>
             
-            <Button variant="primary" onClick={()=>window.open(this.props.newURL)}>{this.props.buttonText}</Button>
-            
+            {button}            
         </Card.Body>
         </Card>
         </div>

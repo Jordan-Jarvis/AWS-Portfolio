@@ -13,6 +13,21 @@ class BoggleSolve extends React.Component {
                 frameURL = "https://www.youtube.com/embed/1wqC7KMDWdY"
                 buttonText = "Link to source" 
                 newURL = 'https://github.com/Jordan-Jarvis/ComputerVisionBoggleSolver'
+                newTab="1"
+                title2 = "Technologies used:"
+                CHTML = { <div className="technologies"> <ul >
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>OpenCV</li>
+                        <li>Tensorflow</li>
+                        <li>NVidia CUDA</li>
+                        <li>Multiprocessing</li>
+                        <li>NumPy (matrix manipulation)</li>
+                        <li>TKinter</li>
+                        <li>Keras</li>
+                        <li>C++</li>
+                        <li>OpenNN</li>
+                  </ul></div>}
                 />
       )
     }

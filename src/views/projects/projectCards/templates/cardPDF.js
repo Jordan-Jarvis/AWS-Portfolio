@@ -4,13 +4,18 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import React from "react"
 import './card.css'
-import { Storage } from 'aws-amplify'
 
 class ProjectPDFCard extends React.Component {
 
 
     render() {
-      
+      let button;
+      if (this.props.newTab == "1") {
+        button = <Button variant="primary" onClick={()=>window.open(this.props.newURL)}>{this.props.buttonText}</Button>;
+        
+      } else {
+        button = <Button variant="primary" onClick={()=>window.location.href = this.props.newURL}>{this.props.buttonText}</Button>;
+      }
       console.log(this.props.property);
       return (
         <div className = "card2">
@@ -25,8 +30,7 @@ class ProjectPDFCard extends React.Component {
             <Card.Text>
             {this.props.text}
             </Card.Text>
-            <Button variant="primary" onClick={()=>window.open(this.props.newURL)}>{this.props.buttonText}</Button>
-            
+            {button}            
         </Card.Body>
         </Card>
         </div>

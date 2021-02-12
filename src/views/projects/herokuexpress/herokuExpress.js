@@ -10,7 +10,7 @@ class HerokuExpress extends React.Component {
 <ProjectEmbedCard 
                 title = 'Heroku Express MP3 Player' 
                 frameURL = "https://aqueous-brushlands-07164.herokuapp.com/playMusic"
-                text = "Much of the UI was pre-built. I mostly made the back-end, which has a database which stores song information, album information, image URLs and more. It uses Express on Heroku and is able to play music from the server. Another project goes much more in depth on databases and storing data using SQL."
+                text = "Much of the UI was pre-built. I mostly made the back-end, which has a database that stores song information, album information, image URLs and more. It uses Express on Heroku and is able to play music from the server. I have another project which goes much more in depth on databases and storing data using SQL which will be posted shortly."
                 CHTML = { <div className="technologies"> <ul >
                         <li>Heroku</li>
                         <li>PHP</li>
@@ -28,6 +28,9 @@ class HerokuExpress extends React.Component {
                   embedCode = {<iframe className = "marg" src="https://aqueous-brushlands-07164.herokuapp.com/playMusic" frameBorder="0" allowFullScreen ><p>Your browser does not support iframes.</p></iframe>}
                 buttonText = "Link to source" 
                 newURL = 'https://github.com/Jordan-Jarvis/React-MP3-Player'
+                title2 = "Technologies used:"
+
+                newTab="1"
                 />
       )
     }

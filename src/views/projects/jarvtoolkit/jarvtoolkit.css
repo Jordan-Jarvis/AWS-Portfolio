@@ -1,0 +1,29 @@
+.car{
+    
+    margin-top:20px;
+    margin:auto;
+    border-color: darkgray;
+    border-radius: 2;
+    box-align: center;
+}
+.caro{
+    max-width: 500px;
+    margin:auto;
+
+}
+
+.caption{
+    border-radius: 10px;
+    border:10px;
+    background-color: black;
+    opacity: 0.4;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+.caption:hover{
+    opacity: 0.8;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+}

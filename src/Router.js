@@ -58,6 +58,7 @@ console.log(PDFURL)
 
                 buttonText = "Download" 
                 newURL = "https://projects215100-staging.s3.us-east-2.amazonaws.com/public/Resume-b.pdf"
+                newTab="1"
                 />
 
               

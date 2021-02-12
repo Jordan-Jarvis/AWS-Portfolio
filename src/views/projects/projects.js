@@ -6,24 +6,83 @@ import RPIPlay from "./rpiplay/rpiplay"
 import HerokuExpress from "./herokuexpress/herokuExpress"
 import ThisSite from "./thissite/thissite"
 import LazyLoad from 'react-lazy-load';
-
+import { AnimatePresence, motion } from "framer-motion";
+import { pageTransition, pageStyle, pageVariants } from "../../parallax/transitions"
+import Jtoolkit from "./jarvtoolkit/jarvtoolkit"
 const ProjectList = () => (
         <div>
-                <ProjectCard
-                        title='Take a look at some of my projects'
-                        text="Below are a collection of some of the projects I have done over the years. I am still building the site and have many more projects which will be added soon."
+                <motion.div
+                        style={pageStyle}
+                        initial="initial"
+                        animate="in"
+                        exit="out"
+                        variants={pageVariants}
+                        transition={pageTransition}
+                >
+                        <ProjectCard
+                                title='Take a look at some of my projects'
+                                text="Below are a collection of some of the projects I have done over the years. I am still building the site. (It is fairly new, so please forgive bugs.) I have many more projects which will be added soon."
 
-                        buttonText="Go Home"
-                        newURL="/"
-                />
-                
-                <ThisSite/>
-                <RPIPlay />
-                <LazyLoad offsetVertical={1000}>
-                        <BoggleSolve />
+                                buttonText="Go Home"
+                                newURL="/"
+                        />
+                </motion.div>
+                <motion.div
+                        style={pageStyle}
+                        initial="initial"
+                        animate="in"
+                        exit="out"
+                        variants={pageVariants}
+                        transition={pageTransition}
+                >
+                        <ThisSite />
+                </motion.div>
+                <motion.div
+                        style={pageStyle}
+                        initial="initial"
+                        animate="in"
+                        exit="out"
+                        variants={pageVariants}
+                        transition={pageTransition}
+                >
+                        <RPIPlay />
+                </motion.div>
+                <LazyLoad offsetVertical={500} height={"100%"}>
+                        <motion.div
+                                style={pageStyle}
+                                initial="initial"
+                                animate="in"
+                                exit="out"
+                                variants={pageVariants}
+                                transition={pageTransition}
+                        >
+                                <BoggleSolve /></motion.div>
                 </LazyLoad>
-                <LazyLoad offsetVertical={1000}>
-                        <HerokuExpress />
+                <LazyLoad offsetVertical={500} height={"100%"}>
+                        <motion.div
+                                style={pageStyle}
+                                initial="initial"
+                                animate="in"
+                                exit="out"
+                                variants={pageVariants}
+                                transition={pageTransition}
+                        >
+                                <HerokuExpress />
+                        </motion.div>
+
+                </LazyLoad>
+                <LazyLoad offsetVertical={500} height={"100%"}>
+                        <motion.div
+                                style={pageStyle}
+                                initial="initial"
+                                animate="in"
+                                exit="out"
+                                variants={pageVariants}
+                                transition={pageTransition}
+                        >
+                                <Jtoolkit />
+                        </motion.div>
+
                 </LazyLoad>
 
 

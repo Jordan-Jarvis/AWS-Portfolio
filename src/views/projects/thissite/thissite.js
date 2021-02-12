@@ -26,7 +26,8 @@ class ThisSite extends React.Component {
                         </ul></div>}
                         buttonText="Go to Source"
                         newURL="https://github.com/Jordan-Jarvis/AWS-Portfolio"
-                />
+                        newTab="1"
+                        />
       )
     }
   }
