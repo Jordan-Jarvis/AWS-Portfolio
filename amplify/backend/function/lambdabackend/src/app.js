@@ -36,6 +36,7 @@ app.get('/', function(req, res) {
 });
 
 app.use(express.static("client/build"));
+app.use(express.json());
 app.use(express.static(path.resolve(__dirname, './client/build')));
 app.get('/express/*', function(req, res) {
   // Add your code here
@@ -49,6 +50,11 @@ app.get("/publ", (req,res) => {
 app.post('/express', function(req, res) {
   // Add your code here
   res.json({success: 'post call succeed!', url: req.url, body: req.body})
+});
+
+app.post('/', function(request, response){
+  console.log(request.body);      // your JSON
+   response.send(request.body);    // echo the result back
 });
 
 app.post('/express/*', function(req, res) {

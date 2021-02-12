@@ -5,7 +5,7 @@ import '../projects/projectCards/card.css'
 import "./aboutme.css"
 import {Img} from 'react-image'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-class AboutMe extends React.Component {
+class ContactMe extends React.Component {
   openURL(newURL){
   
   }
@@ -69,4 +69,4 @@ class AboutMe extends React.Component {
       )
     }
   }
-  export default AboutMe
+  export default ContactMe

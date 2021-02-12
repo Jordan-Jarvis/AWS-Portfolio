@@ -4,6 +4,7 @@ import ProjectPDFCard from "./views/projects/projectCards/cardPDF"
 import NotFound from "./views/errorCorrection/404Error.js"
 import Construction from "./views/errorCorrection/underConstruction.js"
 import AboutMe from "./views/aboutme/aboutme"
+import ContactMe from "./views/contactme/contactme"
 import {
     Switch,
     Route,
@@ -75,7 +76,7 @@ console.log(PDFURL)
               <Construction />
             </Route>
             <Route exact path="/contactme">
-              <Construction />
+              <ContactMe />
             </Route>
             <Route exact path="/me">
               <Construction />

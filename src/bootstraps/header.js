@@ -22,6 +22,7 @@ const NavigationBar = () => (
   <Nav.Link href="https://www.linkedin.com/in/jordan-jarvis95" className="fa fa-linkedin"></Nav.Link>
   <Nav.Link href="#" className="fa fa-envelope"></Nav.Link>
     <Nav className="mr-auto">
+    <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="/resume">Resume</Nav.Link>
       <Nav.Link href="/projects">Projects</Nav.Link>
       <Nav.Link href="/aboutme">About Me</Nav.Link>
@@ -38,9 +39,9 @@ const NavigationBar = () => (
     </Nav>
     <Nav>
       <Nav.Link href="/contactme">Contact Me</Nav.Link>
-      <Nav.Link eventKey={2} href="/me">
+      {/* <Nav.Link eventKey={2} href="/me">
         Non Technical Hobbies And Interests
-      </Nav.Link>
+      </Nav.Link> */}
     </Nav>
   </Navbar.Collapse>
 </Navbar>

@@ -19,6 +19,7 @@ class HomePage extends React.Component {
         <Jumbotron>
   <h1>  Welcome to my portfolio website! My name is Jordan Jarvis. </h1>
   <p>
+    I am a Software Engineer, I am proficient in C++, Python, Java, Javascript, and C#.<br/>
   This site was written using a variety of technologies including but not limited to React, AWS, and Express. To see more about it check my projects page! 
   <br></br>
 
