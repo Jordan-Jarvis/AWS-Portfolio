@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card'
 import React from "react"
-import '../projects/projectCards/card.css'
+import '../projects/projectCards/templates/card.css'
 import {pageTransition,pageStyle,pageVariants} from "../../parallax/transitions"
 import { AnimatePresence, motion } from "framer-motion";
 class Construction extends React.Component {
@@ -31,7 +31,7 @@ class Construction extends React.Component {
                             <h2>
                                 Under Construction</h2>
                             <div className="error-details">
-                                Sorry, the page you requested is under construction and will be publicly available soon. This is a fairly new website (less than a week old). In the meantime check out some of my projects!
+                                Sorry, the page you requested is under construction and will be publicly available soon. This is a fairly new website (about a week old). In the meantime check out some of my projects!
                             </div>
                             <div className="error-actions">
                                 <a href="/projects" className="btn btn-primary btn-lg"><span className="glyphicon glyphicon-home"></span>

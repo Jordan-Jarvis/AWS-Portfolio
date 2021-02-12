@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import React from "react"
-import '../projects/projectCards/card.css'
+import '../projects/projectCards/templates/card.css'
 import "./contactme.css"
 
 import Jumbotron from 'react-bootstrap/Jumbotron'

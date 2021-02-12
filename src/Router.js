@@ -1,10 +1,11 @@
 import React from "react";
 import HomePage from "./views/home/home"
-import ProjectPDFCard from "./views/projects/projectCards/cardPDF"
+import ProjectPDFCard from "./views/projects/projectCards/templates/cardPDF"
 import NotFound from "./views/errorCorrection/404Error.js"
 import Construction from "./views/errorCorrection/underConstruction.js"
 import AboutMe from "./views/aboutme/aboutme"
 import ContactMe from "./views/contactme/contactme"
+import BoggleSolve from "./views/projects/bogglesolve/bogglesolve"
 import {
     Switch,
     Route,
@@ -42,7 +43,7 @@ console.log(PDFURL)
           <AnimatePresence>
           <Switch>
             <Route exact path="/aboutme">
-              About Page
+              
               <AboutMe/>
             </Route>
 
@@ -56,7 +57,7 @@ console.log(PDFURL)
                 newURL = "https://projects215100-staging.s3.us-east-2.amazonaws.com/public/Resume-b.pdf"
                 />
 
-              Users Page
+              
             </Route>
               
 
@@ -70,7 +71,7 @@ console.log(PDFURL)
               <Construction />
             </Route>
             <Route exact path="/boggle">
-              <Construction />
+              <BoggleSolve/>
             </Route>
             <Route exact path="/hmusic">
               <Construction />

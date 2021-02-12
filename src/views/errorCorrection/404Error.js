@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card'
 import React from "react"
-import '../projects/projectCards/card.css'
+import '../projects/projectCards/templates/card.css'
 class PageNotFound extends React.Component {
   openURL(newURL){
   
