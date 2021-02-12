@@ -15,28 +15,28 @@ class Jtoolkit extends React.Component {
     console.log(this.props.property);
     return (
       <ProjectCard
-        imgURL="assets/jarvtoolkit/Complete.PNG"
+        imgURL="jarvtoolkit/Complete.PNG"
         title='Jarvinator Mi A2 Toolkit'
         text="This toolkit was made in C# and used .net frameworks. I used Visual Studio to design it. This was a personal project. The project goal was to make a program which could not only perform the actions shown in the image below, but to so intelligently. Often times when doing written command sequences the user will experience a problem where they need to search for an answer. I have been very active on the XDA forums and as such I know many of the common issues and their solutions. I designed the program not only to resolve common problems intelligently, but added what I called 'Noob Mode' where it tells the user what it is doing on the command line and why. The reason for this was to reduce the number of posts regarding common issues and people trying to learn to do the different things to their phone."
         CHTML={<div><Card.Body>The screenshots below show the functions of the program.</Card.Body><div className="car"><Jumbotron><Carousel className="caro">
           <Carousel.Item interval={5000}>
-            <img src="assets/jarvtoolkit/welcomecropped.PNG" />
+            <img src="jarvtoolkit/welcomecropped.PNG" />
             <Carousel.Caption className="caption">Contains a console to see what commands are running and links to useful resources.</Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={10000}>
-            <img src="assets/jarvtoolkit/General.PNG" />
+            <img src="jarvtoolkit/General.PNG" />
             <Carousel.Caption className="caption">Can root, unroot, backup bootloader, unlock bootloader, reboot phone into various modes and chnage the kernel ID to show as a different variant of the device.</Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={10000}>
-            <img src="assets/jarvtoolkit/TWRP.PNG" />
+            <img src="jarvtoolkit/TWRP.PNG" />
             <Carousel.Caption className="caption">Can install TWRP or temporarily boot TWRP to install zip files for customization of the ROM.</Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={10000}>
-            <img src="assets/jarvtoolkit/fastboot.PNG" />
+            <img src="jarvtoolkit/fastboot.PNG" />
             <Carousel.Caption className="caption">Downloads any selected version of the stock rom and flashes it automatically using fastboot commands. Allows for customization of what parts to flash</Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={10000}>
-            <img src="assets/jarvtoolkit/Flash.PNG" />
+            <img src="jarvtoolkit/Flash.PNG" />
             <Carousel.Caption className="caption">Allows for installation of custom ROMs automatically as well as performing common actions such as installing Google apps and rooting the device.</Carousel.Caption>
           </Carousel.Item >
         </Carousel>
