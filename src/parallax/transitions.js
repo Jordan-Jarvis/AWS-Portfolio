@@ -1,4 +1,3 @@
-import { AnimatePresence, motion } from "framer-motion";
 export const pageVariants = {
     initial: {
       opacity: 0,

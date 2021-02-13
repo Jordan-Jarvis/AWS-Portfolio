@@ -47,7 +47,7 @@ const ProjectList = () => (
                 >
                         <RPIPlay />
                 </motion.div>
-                <LazyLoad offsetVertical={500} height={"100%"}>
+                <LazyLoad offsetVertical={900} height={"100%"}>
                         <motion.div
                                 style={pageStyle}
                                 initial="initial"
@@ -58,7 +58,7 @@ const ProjectList = () => (
                         >
                                 <BoggleSolve /></motion.div>
                 </LazyLoad>
-                <LazyLoad offsetVertical={500} height={"100%"}>
+                <LazyLoad offsetVertical={900} height={"100%"}>
                         <motion.div
                                 style={pageStyle}
                                 initial="initial"
@@ -71,7 +71,7 @@ const ProjectList = () => (
                         </motion.div>
 
                 </LazyLoad>
-                <LazyLoad offsetVertical={500} height={"100%"}>
+                <LazyLoad offsetVertical={900} height={"100%"}>
                         <motion.div
                                 style={pageStyle}
                                 initial="initial"
