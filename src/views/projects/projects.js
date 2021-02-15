@@ -5,6 +5,7 @@ import BoggleSolve from "./bogglesolve/bogglesolve"
 import RPIPlay from "./rpiplay/rpiplay"
 import HerokuExpress from "./herokuexpress/herokuExpress"
 import ThisSite from "./thissite/thissite"
+import OtherProjects from "./otherprojects/otherprojects"
 import LazyLoad from 'react-lazy-load';
 import { AnimatePresence, motion } from "framer-motion";
 import { pageTransition, pageStyle, pageVariants } from "../../parallax/transitions"
@@ -81,6 +82,19 @@ const ProjectList = () => (
                                 transition={pageTransition}
                         >
                                 <Jtoolkit />
+                        </motion.div>
+
+                </LazyLoad>
+                <LazyLoad offsetVertical={900} height={"100%"}>
+                        <motion.div
+                                style={pageStyle}
+                                initial="initial"
+                                animate="in"
+                                exit="out"
+                                variants={pageVariants}
+                                transition={pageTransition}
+                        >
+                                <OtherProjects/>
                         </motion.div>
 
                 </LazyLoad>
