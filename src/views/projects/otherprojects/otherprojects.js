@@ -32,7 +32,7 @@ class OtherProjects extends React.Component {
             <li><a href="https://github.com/Jordan-Jarvis/ML/blob/master/Neural%20Network%20Implementation.py">Python Neural Network Implementation</a></li>
             <li><a href="https://github.com/Jordan-Jarvis/ML/blob/master/Decision%20tree%26k-folds.py">K-Folds And Decision Tree Implementation</a></li>
             <li><a href="https://github.com/Jordan-Jarvis/ML/blob/master/KNN%20algorithm%20implementation.py">K Nearest Neighbors Implementation</a></li>
-            <li><a href="https://github.com/Jordan-Jarvis/cs313-php/tree/master/web">PHP Practice And Demo</a></li>
+            <li><a href="https://github.com/Jordan-Jarvis/cs313-php/tree/master/web">Collection Of PHP Practice And Demos</a></li>
           </ul>
           More are on the way, these are just the ones I have already uploaded.
           </div></div>}

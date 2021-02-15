@@ -25,7 +25,6 @@ class BoggleSolve extends React.Component {
                         <li>NumPy (matrix manipulation)</li>
                         <li>TKinter</li>
                         <li>Keras</li>
-                        <li>C++</li>
                         <li>OpenNN</li>
                   </ul></div>}
                 />

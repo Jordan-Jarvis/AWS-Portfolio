@@ -54,7 +54,6 @@ class Jtoolkit extends React.Component {
             <li>Batch</li>
             <li>Powershell</li>
             <li>XML (for automatic updates)</li>
-            <li>Proabably more I forgot</li>
           </ul>
           </div></div>}
         buttonText="Go to Source"

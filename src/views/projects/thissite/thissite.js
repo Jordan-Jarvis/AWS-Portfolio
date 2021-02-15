@@ -22,7 +22,7 @@ class ThisSite extends React.Component {
                                 <li>HTML</li>
                                 <li>JSON</li>
                                 <li>Rest API</li>
-                                <li>Proabably more I forgot</li>
+                                <li>Potentially More</li>
                         </ul></div>}
                         buttonText="Go to Source"
                         newURL="https://github.com/Jordan-Jarvis/AWS-Portfolio"
