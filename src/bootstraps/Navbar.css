@@ -34,11 +34,17 @@
     }
   }
   
-  @keyframes rotate {
-    0% {
-      transform: rotateY(360deg);
-    }
-    100% {
-      transform: rotateY(0rem);
-    }
-  }
+  @-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0deg); }
+}
+@keyframes rotate {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+}
+
+  
