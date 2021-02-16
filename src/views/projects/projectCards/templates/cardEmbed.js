@@ -2,10 +2,20 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import React from "react"
 import './card.css'
+import Spinner from 'react-spinkit'
+
 class ProjectEmbedCard extends React.Component {
-  openURL(newURL){
-  
-  }
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loading: true
+    };
+  } hideSpinner = () => {
+    this.setState({
+      loading: false
+    });
+  };
     render() {
       let button;
       if (this.props.newTab == "1") {
@@ -27,7 +37,17 @@ class ProjectEmbedCard extends React.Component {
             </Card.Text>
             <div className="buffer">
             <div className="minHeight">
+            <div className="container rsvp-wrapper">
+                    {this.state.loading ? (
+                      <Spinner
+                        className="loading text-center"
+                        name="three-bounce"
+                        color="Black"
+                        fadeIn="none"
+                      />
+                    ) : null}
           {this.props.embedCode}
+                  </div>
           </div>
           </div>
           <Card.Title>{this.props.title2}</Card.Title>
