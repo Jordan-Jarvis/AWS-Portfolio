@@ -29,7 +29,6 @@ class HerokuExpress extends React.Component {
                 buttonText = "Link to source" 
                 newURL = 'https://github.com/Jordan-Jarvis/React-MP3-Player'
                 title2 = "Technologies used:"
-
                 newTab="1"
                 />
       )

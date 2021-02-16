@@ -10,8 +10,10 @@ import LazyLoad from 'react-lazy-load';
 import { AnimatePresence, motion } from "framer-motion";
 import { pageTransition, pageStyle, pageVariants } from "../../parallax/transitions"
 import Jtoolkit from "./jarvtoolkit/jarvtoolkit"
+// import Home1 from "./reactPractice/practice"
 const ProjectList = () => (
         <div>
+                {/* <Home1/> */}
                 <motion.div
                         style={pageStyle}
                         initial="initial"
