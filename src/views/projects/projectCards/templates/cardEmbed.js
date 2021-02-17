@@ -7,7 +7,7 @@ import Spinner from 'react-spinkit'
 class ProjectEmbedCard extends React.Component {
   constructor(props) {
     super(props);
-
+ 
     this.state = {
       loading: true
     };
