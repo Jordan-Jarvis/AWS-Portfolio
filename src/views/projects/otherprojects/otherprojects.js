@@ -34,6 +34,8 @@ class OtherProjects extends React.Component {
             <li><a href="https://github.com/Jordan-Jarvis/ML/blob/master/KNN%20algorithm%20implementation.py">K Nearest Neighbors Implementation</a></li>
             <li><a href="https://github.com/Jordan-Jarvis/cs313-php/tree/master/web">Collection Of PHP Practice And Demos</a></li>
             <li><a href="https://github.com/Jordan-Jarvis/Database-Design-Dev">SQL and Postgres labs</a></li>
+            <li><a href="https://github.com/Jordan-Jarvis/PHP">PHP labs for Web Development II class</a></li>
+
           </ul>
           More are on the way, these are just the ones I have already uploaded.
           </div></div>}
