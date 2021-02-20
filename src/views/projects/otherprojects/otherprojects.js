@@ -10,7 +10,7 @@ class OtherProjects extends React.Component {
   }
   render() {
     console.log(this.props.property);
-    return (
+    return ( 
       <ProjectCard
         title='Other Projects'
         text="I haven't had a chance to convert the projects to a format good for viewing on the web yet, but below is a list of some other projects I have done."
