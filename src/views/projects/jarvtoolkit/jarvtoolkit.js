@@ -5,7 +5,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import Carousel from 'react-bootstrap/Carousel'
 import "../../home/carousel.css"
 import "./jarvtoolkit.css"
-import Jumbotron from 'react-bootstrap/Jumbotron'
 import Card from 'react-bootstrap/Card'
 
 class Jtoolkit extends React.Component {
@@ -18,7 +17,7 @@ class Jtoolkit extends React.Component {
         imgURL="assets/jarvtoolkit/Complete.png"
         title='Jarvinator Mi A2 Toolkit'
         text="This toolkit was made in C# and used .net frameworks. I used Visual Studio to design it. This was a personal project. The project goal was to make a program which could not only perform the actions shown in the image below, but to so intelligently. Often times when doing written command sequences the user will experience a problem where they need to search for an answer. I have been very active on the XDA forums and as such I know many of the common issues and their solutions. I designed the program not only to resolve common problems intelligently, but added what I called 'Noob Mode' where it tells the user what it is doing on the command line and why. The reason for this was to reduce the number of posts regarding common issues and people trying to learn to do the different things to their phone."
-        CHTML={<div><Card.Body>The screenshots below show the functions of the program.</Card.Body><div className="car"><Jumbotron><Carousel className="caro">
+        CHTML={<div><Card.Body>The screenshots below show the functions of the program.</Card.Body><div className="car"><Carousel className="caro">
           <Carousel.Item interval={5000}>
             <img src="assets/jarvtoolkit/welcomecropped.png" />
             <Carousel.Caption className="caption">Contains a console to see what commands are running and links to useful resources.</Carousel.Caption>
@@ -41,7 +40,7 @@ class Jtoolkit extends React.Component {
           </Carousel.Item >
         </Carousel>
           <p><br></br>The program had the abilities to intelligently discover what mode the phone was in (fastboot, edl, plugged in with debugging disabled, plugged in with debugging enabled) and would adjust the commands it would run according to the mode. This allowed the user to easily unbrick their phone in the event of a bad flash or corrupted data.</p>
-        </Jumbotron></div>
+        </div>
           <Card.Title>Technologies Used:</Card.Title>
           <div className="technologies"> <ul >
             <li>C#</li>

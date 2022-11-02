@@ -4,7 +4,7 @@ import React from "react"
 import '../projects/projectCards/templates/card.css'
 import "./contactme.css"
 
-import Jumbotron from 'react-bootstrap/Jumbotron'
+// import Jumbotron from 'react-bootstrap/Jumbotron'
 import Test from "../../components/overlay.js"
 import Nav from 'react-bootstrap/Nav'
 class ContactMe extends React.Component {
@@ -18,7 +18,7 @@ class ContactMe extends React.Component {
   <Nav.Link href="https://www.linkedin.com/in/jordan-jarvis95" className="fa fa-linkedin"></Nav.Link>
   <Nav.Link href="#" className="fa fa-envelope"></Nav.Link>
           </Card.Text>
-          <Jumbotron>
+
             <p style={{color:"red"}}>The contact form and email have temporarily been disabled due to bots! Please feel free to reach out on any of my social media platforms.</p>
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
               <div className="form-group">
@@ -39,8 +39,6 @@ class ContactMe extends React.Component {
               {/* <Button type="submit" className="btn btn-primary">Submit</Button> */}
             </form>
 
-
-          </Jumbotron>
           <Card.Text>
           </Card.Text>
 

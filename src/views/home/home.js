@@ -4,7 +4,6 @@ import React from "react"
 import '../projects/projectCards/templates/card.css'
 
 import HomeCarousel from "./carousel.js"
-import Jumbotron from 'react-bootstrap/Jumbotron'
 class HomePage extends React.Component {
   openURL(newURL){
   
@@ -17,7 +16,7 @@ class HomePage extends React.Component {
         <Card.Text>
             
         </Card.Text>
-        <Jumbotron>
+
   <h1>  Welcome to my portfolio website! My name is Jordan Jarvis. </h1>
   <p>
     I am a Software Engineer, I am proficient in C++, Python, Java, Javascript, and C#.<br/>
@@ -30,7 +29,7 @@ class HomePage extends React.Component {
     <Button variant="primary" onClick={()=>window.location.href="/aboutme"}>More about me</Button>    <Button variant="primary" onClick={()=>window.location.href="/projects"}>See my projects</Button>
 
   </p>
-</Jumbotron>
+
         <Card.Text>
                 </Card.Text>
         

@@ -1,6 +1,6 @@
 import React from "react";
 import {Button} from 'react-bootstrap'
-import Dialog from 'react-bootstrap-dialog'
+// import Dialog from 'react-bootstrap-dialog'
 
 class Test extends React.Component {
 
@@ -17,7 +17,7 @@ class Test extends React.Component {
         return (
           <div>
             <Button onClick={this.onClick}>Submit</Button>
-            <Dialog ref={(el) => { this.dialog = el }} />
+            {/* <Dialog ref={(el) => { this.dialog = el }} /> */}
             
           </div>
         )

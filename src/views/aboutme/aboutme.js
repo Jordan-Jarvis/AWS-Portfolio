@@ -3,8 +3,6 @@ import Button from 'react-bootstrap/Button'
 import React from "react"
 import '../projects/projectCards/templates/card.css'
 import "./aboutme.css"
-import {Img} from 'react-image'
-import Jumbotron from 'react-bootstrap/Jumbotron'
 class ContactMe extends React.Component {
   openURL(newURL){
   
@@ -17,15 +15,15 @@ class ContactMe extends React.Component {
         <Card.Text>
             
         </Card.Text>
-        <Jumbotron>
+
 
         <h1 style={{}}>  Hello, I'm Jordan. </h1>
             <div className="wrapper">
                 <div id="one">
-            <Img src="/assets/aboutme/2.jpg" width="180" crop="fill"  />
+            <img src="/assets/aboutme/2.jpg" width="180" crop="fill"  />
             </div>
             <div id="two">
-                <bf>I am Jordan, and I love my life.</bf>
+                I am Jordan, and I love my life.
            <br></br><br></br>I recently graduated from BYU-Idaho with a degree in Computer Science.
         If you give me a broken laptop I will do my best to turn it into a cloud server. I grew up in a household where integrity was the top priority. Hard work and honesty is my policy. <br></br><br></br>
             I love to learn and improve my knowledge base. Ever since I was a small child I was tinkering and learning about the world around me at a rate far exceeding most people around me. I realized that computers were great and I could learn a lot from them.
@@ -51,7 +49,7 @@ class ContactMe extends React.Component {
     <Button variant="primary" onClick={()=>window.location.href="/contactme"}>Contact Me</Button>    <Button variant="primary" onClick={()=>window.location.href="/projects"}>See my projects</Button>
 
   </p>
-</Jumbotron>
+
         <Card.Text>
                 </Card.Text>
         

@@ -10,7 +10,7 @@ import RPIPlay from "./views/projects/rpiplay/rpiplay"
 import HerokuExpress from "./views/projects/herokuexpress/herokuExpress"
 import ThisSite from "./views/projects/thissite/thissite"
 import {
-    Switch,
+    Routes,
     Route,
     Link
   } from "react-router-dom";
@@ -44,13 +44,13 @@ console.log(PDFURL)
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <AnimatePresence>
-          <Switch>
-            <Route exact path="/aboutme">
+          <Routes>
+            <Route exact path="/aboutme" element={<AboutMe/>}/>
               
-              <AboutMe/>
-            </Route>
 
-            <Route exact path="/resume">
+
+
+            <Route exact path="/resume" element={
             <ProjectPDFCard 
             
                 title = 'Click "download" below to download a copy' 
@@ -59,38 +59,33 @@ console.log(PDFURL)
                 buttonText = "Download" 
                 newURL = "https://projects215100-staging.s3.us-east-2.amazonaws.com/public/Resume-b.pdf"
                 newTab="1"
-                />
-
+                />}/>
+            <Route exact path="/projects" element={<ProjectList />}/>
+             
+            
+            <Route exact path="/thissite" element={<ThisSite />}/>
               
-            </Route>
-            <Route exact path="/projects">
-              <ProjectList />
-            </Route>
-            <Route exact path="/thissite">
-              <ThisSite />
-            </Route>
-            <Route exact path="/rpimusic">
-              <RPIPlay />
-            </Route>
-            <Route exact path="/boggle">
-              <BoggleSolve/>
-            </Route>
-            <Route exact path="/hmusic">
-              <HerokuExpress/>
-            </Route>
-            <Route exact path="/contactme">
-              <ContactMe />
-            </Route>
-            <Route exact path="/me">
-              <Construction />
-            </Route>
-            <Route exact path="/">
-              <HomePage
-
-              />
-            </Route>
+            
+            <Route exact path="/rpimusic" element={<RPIPlay />}/>
+              
+            
+            <Route exact path="/boggle" element={<BoggleSolve/>}/>
+              
+            
+            <Route exact path="/hmusic" element={<HerokuExpress/>}/>
+              
+           
+            <Route exact path="/contactme" element={<ContactMe />}/>
+              
+           
+            <Route exact path="/me" element={<Construction />}/>
+              
+           
+            <Route exact path="/" element={<HomePage/>}/>
+              
+            
             <Route component={NotFound} />
-          </Switch>
+          </Routes>
       </AnimatePresence>
         </div>
       </Router>
