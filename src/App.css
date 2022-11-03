@@ -3,7 +3,12 @@
 
 }
 
-
+.jumbotron {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -109,6 +114,8 @@ body {
   height: 100vh;
   margin: 0;
   display: flex;
+  
+}
   .desc-wrapper {
     margin: auto;
     box-sizing: border-box;
@@ -124,13 +131,14 @@ body {
     margin-top: 50px;
     padding: 0;
   }
-}
+
 @media (max-width: 998px) and (orientation: portrait) {
   .season-desc {
     padding: 1.5rem 20px;
     font-size: 1rem;
     height: unset;
     min-height: 100vh;
+  }
     .season-title {
       font-size: 2.5rem;
       margin: 20px 0;
@@ -140,7 +148,7 @@ body {
       margin-top: 20px;
      }
    }
- }
+ 
 
 
 

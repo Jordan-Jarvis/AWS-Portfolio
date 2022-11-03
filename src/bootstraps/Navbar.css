@@ -1,20 +1,22 @@
 .navbar {
     display: flex;
+    color: #343a40;
+
     align-items: center;
     justify-content: space-between;
     position: absolute;
     z-index: 1;
     width: 100%;
-
     position: sticky;
+    box-sizing: border-box;
   }
   
   .navbar-sticky {
-    background: #333;
+    background: #343a40;
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 1px 1px 1px #222;
+    box-shadow: 1px 1px 1px rgb(255, 255, 255);
     animation: moveDown 0.5s ease-in-out;
   }
   

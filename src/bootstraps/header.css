@@ -4,13 +4,19 @@ nav.navbar {
     margin-right:0px;
     margin-left:0px;
     border-radius:25px;
-
+    padding: .5rem 1rem;
     box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
-    -moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+    /* -moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6); */
     -webkit-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
     -o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
     border-radius:25px;
-    position: center;
-
     box-sizing: border-box;
 }
+
+.navlink {
+
+}
+.bg-darkin {
+    --bs-bg-opacity: 1;
+    background-color: rgba(52,58,64);
+  }

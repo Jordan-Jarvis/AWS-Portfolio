@@ -13,10 +13,8 @@ class ContactMe extends React.Component {
         <div className = "card2">
         <Card style={{ }}>
         <Card.Text>
-            
         </Card.Text>
-
-
+        <div className='jumbotron'>
         <h1 style={{}}>  Hello, I'm Jordan. </h1>
             <div className="wrapper">
                 <div id="one">
@@ -50,6 +48,7 @@ class ContactMe extends React.Component {
 
   </p>
 
+</div>
         <Card.Text>
                 </Card.Text>
         

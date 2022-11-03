@@ -18,7 +18,7 @@ class ContactMe extends React.Component {
   <Nav.Link href="https://www.linkedin.com/in/jordan-jarvis95" className="fa fa-linkedin"></Nav.Link>
   <Nav.Link href="#" className="fa fa-envelope"></Nav.Link>
           </Card.Text>
-
+            <div className='jumbotron'>
             <p style={{color:"red"}}>The contact form and email have temporarily been disabled due to bots! Please feel free to reach out on any of my social media platforms.</p>
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
               <div className="form-group">
@@ -38,7 +38,7 @@ class ContactMe extends React.Component {
               <br/>
               {/* <Button type="submit" className="btn btn-primary">Submit</Button> */}
             </form>
-
+            </div>
           <Card.Text>
           </Card.Text>
 

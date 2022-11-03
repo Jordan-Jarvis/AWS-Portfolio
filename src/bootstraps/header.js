@@ -12,7 +12,7 @@ const NavigationBar = () => (
   <nav className="navbar">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
-<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+<Navbar collapseOnSelect className="bg-darkin" expand="lg" bg="bg-darkin" variant="dark">
   <Navbar.Brand href="/"><img src={Logo} alt="Jarvis logo" className="navbar--logo" /></Navbar.Brand>
 
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
