@@ -8,11 +8,13 @@ import ContactMe from "./views/contactme/contactme"
 import BoggleSolve from "./views/projects/bogglesolve/bogglesolve"
 import RPIPlay from "./views/projects/rpiplay/rpiplay"
 import HerokuExpress from "./views/projects/herokuexpress/herokuExpress"
+import Wedding from "./views/wedding/wedding"
 import ThisSite from "./views/projects/thissite/thissite"
 import {
     Routes,
     Route,
-    Link
+    Link,
+    redirect
   } from "react-router-dom";
   import {AnimatePresence} from 'framer-motion'
   import { BrowserRouter as Router} from 'react-router-dom';
@@ -73,6 +75,9 @@ console.log(PDFURL)
               
             
             <Route exact path="/hmusic" element={<HerokuExpress/>}/>
+            
+            
+            <Route exact path="/wedding" element={window.location.replace('https://www.theknot.com/us/jordan-jarvis-and-rebecca-kiser/	')}/>
               
            
             <Route exact path="/contactme" element={<ContactMe />}/>
