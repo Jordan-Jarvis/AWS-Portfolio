@@ -7,11 +7,7 @@ class Wedding extends React.Component {
 
     render() {
     return (
-      
-    
-<iframe src="https://www.theknot.com/us/jordan-jarvis-and-rebecca-kiser/	" width="200" height="200" frameBorder="0" allowFullScreen ><p>Your browser does not support iframes.</p></iframe>
-)
-
+      window.location.replace('https://www.theknot.com/us/jordan-jarvis-and-rebecca-kiser/	'))
 }
 }
 export default Wedding

@@ -10,6 +10,7 @@ import RPIPlay from "./views/projects/rpiplay/rpiplay"
 import HerokuExpress from "./views/projects/herokuexpress/herokuExpress"
 import Wedding from "./views/wedding/wedding"
 import ThisSite from "./views/projects/thissite/thissite"
+
 import {
     Routes,
     Route,
@@ -77,7 +78,7 @@ console.log(PDFURL)
             <Route exact path="/hmusic" element={<HerokuExpress/>}/>
             
             
-            {/* <Route exact path="/wedding" element={window.location.replace('https://www.theknot.com/us/jordan-jarvis-and-rebecca-kiser/	')}/> */}
+            <Route exact path="/wedding" element={<Wedding/>}/>
               
            
             <Route exact path="/contactme" element={<ContactMe />}/>
