@@ -77,7 +77,7 @@ console.log(PDFURL)
             <Route exact path="/hmusic" element={<HerokuExpress/>}/>
             
             
-            <Route exact path="/wedding" element={window.location.replace('https://www.theknot.com/us/jordan-jarvis-and-rebecca-kiser/	')}/>
+            {/* <Route exact path="/wedding" element={window.location.replace('https://www.theknot.com/us/jordan-jarvis-and-rebecca-kiser/	')}/> */}
               
            
             <Route exact path="/contactme" element={<ContactMe />}/>
