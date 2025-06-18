@@ -90,7 +90,7 @@ console.log(PDFURL)
             <Route exact path="/" element={<HomePage/>}/>
               
             
-            <Route component={NotFound} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
       </AnimatePresence>
         </div>
